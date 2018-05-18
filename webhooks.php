@@ -25,18 +25,25 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			// Build message to reply back
 			
-			if ($event['message']['text'] == "Hi")
+			if ($event['message']['text'] == "Hi"||$event['message']['text'] == "hi")
 			{
 			$messages = [
 				'type' => 'text',
 			        'text' => "Hi"
 			];
 			}
-			else if ($event['message']['text'] == "Hello")
+			else if ($event['message']['text'] == "Hello"||$event['message']['text'] == "ไง")
 			{
 			$messages = [
 				'type' => 'text',
 			        'text' => "สวัสดี"
+			];
+			}
+			else if ($event['message']['text'] == "หิว")
+			{
+			$messages = [
+				'type' => 'text',
+			        'text' => "แดกสิครับ"
 			];
 			}
 			else if ($event['message']['text'] == "pic")
