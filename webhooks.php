@@ -46,6 +46,13 @@ if (!is_null($events['events'])) {
 			        'text' => "แดกสิครับ"
 			];
 			}
+			else if ($event['message']['text'] == "SAP-Fiori I")
+			{
+			$messages = [
+				'type' => 'text',
+			        'text' => "ไม่สามารถใช้ SAP-Fiori ผ่าน Internet explorer ได้ ให้เปลี่ยนใช้ google chrome แทนครับ"
+			];
+			}
 			else if ($event['message']['text'] == "แก้ว")
 			{
 			$messages = [
