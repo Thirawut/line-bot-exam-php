@@ -30,6 +30,17 @@ if (!is_null($events['events'])) {
 			
 			];
 			
+			if ($event['message']['type'] == "1")
+			{
+				$text1 ="2125";
+				$replyToken = $event['replyToken'];
+				$messages = [
+				{'type' => 'text',
+				'text' => $text1 }
+				];
+				
+			}
+			
 			
 
 			// Make a POST Request to Messaging API to reply to sender
