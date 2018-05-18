@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 			
 
 			
-			if ($event['message']['type'] == "1")
+			if ($event['message']['text'] == "1")
 			{
 				$text1 ="2125";
 				$replyToken = $event['replyToken'];
