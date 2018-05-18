@@ -53,12 +53,12 @@ if (!is_null($events['events'])) {
 			        'text' => "หนุ่มร่างถ่วม"
 			];
 			}
-			else if ($event['message']['text'] == "pic")
+			else if ($event['message']['text'] == "หิวมาก")
 			{	
                         $messages = [
 	 			'type' => 'image',
-			        'originalContentUrl' => "https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363",
-	  			'previewImageUrl' => "https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363"
+			        'originalContentUrl' => "https://www.knorr.com/content/dam/unilever/knorr_world/global/other_foods/all/type_of_dishes-international_dishes-hero_image-861954.jpg",
+	  			'previewImageUrl' => "https://www.knorr.com/content/dam/unilever/knorr_world/global/other_foods/all/type_of_dishes-international_dishes-hero_image-861954.jpg"
 			];
 			}
 			
