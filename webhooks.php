@@ -20,6 +20,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			////$replyToken = $event['replyToken'];
 
+			$text = 'How are you?';
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
