@@ -25,19 +25,26 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			// Build message to reply back
 			
-			if ($event['message']['text'] == "22")
+			if ($event['message']['text'] == Hi")
 			{
 			$messages = [
 				'type' => 'text',
-			        'text' => $text1
+			        'text' => "Hi"
 			];
 			}
-			else if ($event['message']['text'] == "1")
+			else if ($event['message']['text'] == "Hello")
 			{
 			$messages = [
 				'type' => 'text',
-			        'text' => "123"
+			        'text' => "สวัสดี"
 			];
+			}
+			else if ($event['message']['text'] == "pic")
+			{
+
+			$img_url = "https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363";
+			$outputText = new LINE\LINEBot\MessageBuilder\ImageMessageBuilder($img_url, $img_url);
+			$response = $bot->replyMessage($event->getReplyToken(), $outputText);
 			}
 			
 			
