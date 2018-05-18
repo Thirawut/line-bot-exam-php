@@ -23,11 +23,14 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			// Build message to reply back
+			
+			if ($event['message']['text'] == "22")
+			{
 			$messages = [
 				'type' => 'text',
-			'text' => $text1
-			
+			        'text' => $text1
 			];
+			}
 			
 			
 
