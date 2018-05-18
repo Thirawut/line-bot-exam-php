@@ -60,6 +60,21 @@ if (!is_null($events['events'])) {
 			        'text' => "หนุ่มร่างถ่วม"
 			];
 			}
+			else if ($event['message']['text'] == "unable to find customer location")
+			{
+			$messages = [
+				'type' => 'text',
+			        'text' => "กรณีที่ไม่สามารถหาที่อยู่ลูกค้าได้ ให้ทำการใส่ข้อมูล latitude และ longtitude ของลูกค้าใน customer master ด้วยครับ"
+			];
+			}
+			else if ($event['message']['text'] == "change queue date")
+			{
+			$messages = [
+				'type' => 'text',
+			        'text' => "กรณีที่ต้องการยกเลิกการจัดส่ง ให้ยกเลิก queue เดิม แล้วทำการจอง queue ใหม่ด้วยครับ"
+			];
+			}
+			
 			else if ($event['message']['text'] == "หิวมาก")
 			{	
                         $messages = [
