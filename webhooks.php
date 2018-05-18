@@ -17,7 +17,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			//$text = $event['source']['userId'];
-			$text ='sdsdfsf'
+			$text ="sdsdfsf";
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			// Build message to reply back
