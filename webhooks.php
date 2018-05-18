@@ -20,6 +20,7 @@ if (!is_null($events['events'])) {
 			//$text = $event['source']['userId'];
 			$text ="sdsdfsf";
 			$text1 ="2125";
+			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			// Build message to reply back
@@ -29,6 +30,13 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 			        'text' => $text1
+			];
+			}
+			else if ($event['message']['text'] == "1")
+			{
+			$messages = [
+				'type' => 'text',
+			        'text' => "123"
 			];
 			}
 			
