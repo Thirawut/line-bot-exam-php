@@ -46,6 +46,13 @@ if (!is_null($events['events'])) {
 			        'text' => "แดกสิครับ"
 			];
 			}
+			else if ($event['message']['text'] == "แก้ว")
+			{
+			$messages = [
+				'type' => 'text',
+			        'text' => "หนุ่มร่างถ่วม"
+			];
+			}
 			else if ($event['message']['text'] == "pic")
 			{	
                         $messages = [
